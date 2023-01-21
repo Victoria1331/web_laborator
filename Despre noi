@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despre noi</title>
+
+    <link href="bootstrap-5.0.0-beta1-dist\css\bootstrap.min.css" rel="stylesheet">
+    <link href="tools/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="tools/icofont\icofont.min.css" rel="stylesheet"> 
+    <link href="contact.css" rel="stylesheet">
+
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+        <style>
+.wrapper .icon{
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  display: inline-block;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
+}
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  line-height: 1.5;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+
+
+
+
+body, html {
+        height: 100%;
+        font-family: "Dancing", sans-serif;
+      }
+      
+      .bgimg {
+        background-position: center;
+        background-size: cover;
+        
+        min-height: 75%;
+      }
+      
+      .menu {
+        display: none;
+      }
+
+          .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+          }
+    
+          @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+              font-size: 3.5rem;
+            }
+          }
+
+      body {
+        background-color: #ffffff;
+      }
+      .font {
+        font-family: "Brush Script MT", cursive;
+        font-size: 2.5rem;
+        font-weight: 200;
+        line-height: 3rem;
+        color: #02c39a;
+      }
+
+      #navBar {
+        font-size: 1.5rem;
+        font-weight: 100;
+      }
+      .colorBg {
+        background-color: #ffffff;
+      }
+      .logo-text {
+        color: black;
+      }
+
+      #navLinks .nav-link {
+        color: #000000;
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+
+      #navLinks .nav-link:hover {
+        color:#dc1897;
+      }
+
+      #navbar.scrolled {
+        background: rgb(222, 192, 222);
+        transition: background 300ms;
+      }
+
+      #logo-img {
+        width: 60px;
+        height: 60px;
+      }
+       /* footer */
+       .bg-footer {
+        background-color: #fafbff;
+      }
+      /* footer */
+      footer {
+        background-color: rgba(204, 33, 113, 0.344);
+        color: aliceblue;
+      }
+
+      footer ul {
+        list-style-type: none;
+        padding-left: 0%;
+      }
+      footer p {
+        margin-bottom: 1px;
+      }
+      .back-to-top {
+      position: fixed;
+      background: #3ec1d5;
+      color: #fff;
+      padding: 6px 12px 9px 12px;
+      font-size: 16px;
+      border-radius: 50%;
+      right: 15px;
+      bottom: 15px;
+      transition: background 0.5s;
+    }
+
+    @media (max-width: 768px) {
+      .back-to-top {
+        bottom: 15px;
+      }
+    }
+
+    .back-to-top:focus {
+      background: #3ec1d5;
+      color: #fff;
+      outline: none;
+    }
+
+    .back-to-top:hover {
+      border: 2px solid rgb(48, 241, 184);
+      background: #fff;
+      color: #3cd6ed;
+      box-shadow: 0 1.2em 1.2em -1em rgb(48, 241, 184);
+    }
+        </style>
+    
+        
+      </head>
+      <body>
+        
+    <header>
+      <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+          <div class="w3-col s3">
+            <a href="Acasă.html" class="w3-button w3-block w3-black">Acasă</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="Gentuțe.html" class="w3-button w3-block w3-black">Gentuțe</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="Rucsacuri.html" class="w3-button w3-block w3-black">Rucsacuri</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="Despre noi.html" class="w3-button w3-block w3-black">Despre noi</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="Înregistrare.html" class="w3-button w3-block w3-black">Înregistrare</a>
+          </div>
+        </div>
+      </div>
+
+
+    
+    
+     <!--About and Contact Section  -->
+
+     <div class="w3-row w3-padding-64" id="about">
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+       <img src="poze gentute/about us.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="650">
+      </div>
+  
+      <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">Despre noi</h1><br>
+        <h5 class="w3-center">MacMade</h5>
+        <p class="w3-large">MacMade este o mica afacere ce doreste sa ofere clientelor sale gentute, ruccsacuri si accesorii de calitate realizate manual.Fiecare gentuta poate fi realizata asa cum isi doreste 
+          clienta noastra, fiecare detaliu conteaza pentru noi.Dorim sa oferim produse de calitate care sa ne bucure clientii si sa poarte cu mandrie gentuta "MacMade".
+        </p>
+        
+      </div>
+    </div>
+
+     <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+      <h2 class="w3-wide w3-center">CONTACT</h2>
+      <p class="w3-opacity w3-center"><i>Parerea ta contează!</i></p>
+      <div class="w3-row w3-padding-32">
+        <div class="w3-col m6 w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker" style="width:30px"></i>România, Brașov<br>
+          <i class="fa fa-phone" style="width:30px"></i> Phone: +40 734567897<br>
+          <i class="fa fa-envelope" style="width:30px"> </i> Email:macmade@gmail.com<br>
+        </div>
+        <div class="w3-col m6">
+          <form action="/action_page.php" target="_blank">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+              </div>
+            </div>
+            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+            <button class="w3-button w3-black w3-section w3-right" type="submit">Trimite</button>
+          </form>
+        </div>
+      </div>
+    </div><!-- Sfarsit Contact Section -->
+  
+      <!-- FOOTER -->
+      <footer>
+        <footer>
+          <div class="wrapper">
+            <a href="https://www.facebook.com/m.a.c.made01" class="icon facebook">
+              <div class="tooltip">Facebook</div>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </a>
+            <a href="https://instagram.com/m.a.c.made?igshid=YmMyMTA2M2Y=" class="icon instagram">
+              <div class="tooltip">Instagram</div>
+              <span><i class="fab fa-instagram"></i></span>
+            </a>
+          </div>
+          <img src="Poze/poza antet jos.png" alt=""
+          width="1550"
+          >
+      </footer>
+      </footer>
+      <script src="bootstrap-5.0.0-beta1-dist\js\bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script> --> 
+  </body>
+</html>
+
+
