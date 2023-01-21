@@ -1,0 +1,406 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gentuțe</title>
+
+    <link href="bootstrap-5.0.0-beta1-dist\css\bootstrap.min.css" rel="stylesheet">
+    <link href="tools/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="tools/icofont\icofont.min.css" rel="stylesheet"> 
+
+   
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+
+        <style>
+.wrapper .icon{
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  display: inline-block;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
+}
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  line-height: 1.5;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+
+
+
+
+body, html {
+        height: 100%;
+        font-family: "Dancing", sans-serif;
+      }
+      
+      .bgimg {
+        background-position: center;
+        background-size: cover;
+        
+        min-height: 75%;
+      }
+      
+      .menu {
+        display: none;
+      }
+          .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+          }
+    
+          @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+              font-size: 3.5rem;
+            }
+          }
+
+      body {
+        background-color: #ffffff;
+      }
+      .font {
+        font-family: "Oswald", cursive;
+        font-size: 2.5rem;
+        font-weight: 200;
+        line-height: 3rem;
+        color: #ffffff;
+      }
+
+      #navBar {
+        font-size: 1.5rem;
+        font-weight: 100;
+      }
+      .colorBg {
+        background-color: #ffffff;
+      }
+      .logo-text {
+        color: rgb(255, 255, 255);
+      }
+       /* footer */
+       .bg-footer {
+        background-color: rgb(0, 0, 0);
+      }
+      /* footer */
+      footer {
+        background-color: rgba(204, 33, 113, 0.344);
+        color: aliceblue;
+      }
+
+      footer ul {
+        list-style-type: none;
+        padding-left: 0%;
+      }
+      footer p {
+        margin-bottom: 1px;
+      }
+      .back-to-top {
+      position: fixed;
+      background: #3ec1d5;
+      color: #fff;
+      padding: 6px 12px 9px 12px;
+      font-size: 16px;
+      border-radius: 50%;
+      right: 15px;
+      bottom: 15px;
+      transition: background 0.5s;
+    }
+
+    @media (max-width: 768px) {
+      .back-to-top {
+        bottom: 15px;
+      }
+    }
+
+    .back-to-top:focus {
+      background: #3ec1d5;
+      color: #fff;
+      outline: none;
+    }
+
+    .back-to-top:hover {
+      border: 2px solid rgb(48, 241, 184);
+      background: #fff;
+      color: #3cd6ed;
+      box-shadow: 0 1.2em 1.2em -1em rgb(48, 241, 184);
+    }
+        </style>
+        <link href="Gentuțe.css" rel="stylesheet">
+      </head>
+      <body>
+        <header>
+ 
+      <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+          <div class="w3-col s3">
+            <a href="Acasă.html" class="w3-button w3-block w3-black">Acasă</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="Gentuțe.html" class="w3-button w3-block w3-black">Gentuțe</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="Rucsacuri.html" class="w3-button w3-block w3-black">Rucsacuri</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="Despre noi.html" class="w3-button w3-block w3-black">Despre noi</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="Înregistrare.html" class="w3-button w3-block w3-black">Înregistrare</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+   
+    <div class="pt-5 "></div>
+    
+    <div class="container marketing"></div>
+
+
+       <!----macmade -->
+        <h1 class="text-center"  style="font-family:Merriweather ">MacMade!  </h1>
+        <center> Croșetat pentru tine.  </center>
+
+      
+        <!-- Gentute Section -->
+        
+        <hr class="featurette-divider">
+        <h1 class="text-center"  style="font-family:Dancing">Colecția Summer  </h1>
+        <p>Geantuțele "MacMade" sunt lucrate manual din fire tricotate. Timp de producție 2-3 zile. Dimensiune 18*9cm. Adâncime 5 cm.Puteți comanda o gentuță de „Summer” în orice culoare dorită. Portofoliul Geantă „Summer” se fixează cu închizătoare și are o curea combinată cu feronerie din metal. In interiorul geanta lucrata manual „Summer” este captușita cu bumbac 100%, de obicei in culoarea produsului. Captuseala cu buzunare, unul neaparat cu fermoar. Geanta Summer se potrivește perfect și completează orice 
+          aspect care îi va face pe alții să vă amintească mult timp. Geanta Summer  poate fi realizata special pentru tine in orice culoare, in orice combinatie de culori si chiar si in marimi individuale.
+        </p>
+
+        <div class="w3-row ">
+          <div class="w3-col l3 s6">
+            <div class="w3-container">
+              <img src="poze gentute/blue.jpg" style="width:100%">
+              <p>Model Blue<br><b>500 lei</b></p>
+            </div>
+            <div class="w3-container">
+              <div class="w3-display-container">
+                <img src="poze gentute/lime.jpg" style="width:100%">
+                <span class="w3-tag w3-display-topleft">Reducere</span>
+                <div class="w3-display-middle w3-display-hover">
+                  <button class="w3-button w3-black">Cumpara acum <i class="fa fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <p>Model Lime<br><b class="w3-text-red">400 lei</b></p>
+            </div>
+          </div>
+      
+          <div class="w3-col l3 s6">
+            <div class="w3-container">
+              <div class="w3-display-container">
+                <img src="poze gentute/cherry.jpg" style="width:100%">
+                <span class="w3-tag w3-display-topleft">Nou</span>
+                <div class="w3-display-middle w3-display-hover">
+                  <button class="w3-button w3-black">Cumpara acum <i class="fa fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <p>Model Cherry<br><b>500 lei</b></p>
+            </div>
+            <div class="w3-container">
+              <img src="poze gentute/turcuaz.jpg" style="width:100%">
+              <p>Model Turquoise<br><b>500 lei</b></p>
+            </div>
+          </div>
+      
+          <div class="w3-col l3 s6">
+            <div class="w3-container">
+              <img src="poze gentute/yellow.jpg" style="width:100%">
+              <p>Model Yellow<br><b>500 lei</b></p>
+            </div>
+            <div class="w3-container">
+              <div class="w3-display-container">
+                <img src="poze gentute/lime.jpg" style="width:100%">
+                <span class="w3-tag w3-display-topleft">Reducere</span>
+                <div class="w3-display-middle w3-display-hover">
+                  <button class="w3-button w3-black">Cumpara acum <i class="fa fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <p>Model Lime<br><b class="w3-text-red">400 lei</b></p>
+            </div>
+          </div>
+      
+          <div class="w3-col l3 s6">
+            <div class="w3-container">
+              <img src="poze gentute/gray.jpg" style="width:100%">
+              <p>Model Gray<br><b>500 lei</b></p>
+            </div>
+            <div class="w3-container">
+              <img src="poze gentute/blue.jpg" style="width:100%">
+              <p>Model Blue<br><b>500 lei</b></p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+        <h1 class="text-center"  style="font-family:Dancing">Colecția Marshmallow  </h1>
+        <p>Geantuțele "MacMade" sunt lucrate manual din fire tricotate. Accesoriile pot diferi de cele din fotografie. Timp de producție 2-3 zile. Dimensiune 26*18 cm. Adâncime 10-11 cm.Puteți comanda o gentuță de „Marshmallow” în orice culoare dorită. 
+          Portofoliul Geantă Marshmallow se fixează cu închizătoare și are o curea combinată cu feronerie din metal.
+          In interiorul geanta lucrata manual "Marshmallow" este captușita cu bumbac 100%, de obicei in culoarea produsului. Captuseala cu buzunare, unul neaparat cu fermoar.
+          
+          Geanta Marshmallow se potrivește perfect și completează orice aspect care îi va face pe alții să vă amintească mult timp.
+          Geanta Marshmallow poate fi realizata special pentru tine in orice culoare, in orice combinatie de culori si chiar si in marimi individuale.
+
+
+          <div class="w3-row ">
+            <div class="w3-col l3 s6">
+              <div class="w3-container">
+                <img src="poze gentute/marshmallow1.jpg" style="width:100%">
+                <p>Model Blue<br><b>500 lei</b></p>
+              </div>
+              <div class="w3-container">
+                <div class="w3-display-container">
+                  <img src="poze gentute/marshmallow2.jpg" style="width:100%">
+                  <span class="w3-tag w3-display-topleft">Reducere</span>
+                  <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button w3-black">Cumpara acum <i class="fa fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+                <p>Model Lime<br><b class="w3-text-red">400 lei</b></p>
+              </div>
+            </div>
+        
+            <div class="w3-col l3 s6">
+              <div class="w3-container">
+                <div class="w3-display-container">
+                  <img src="poze gentute/marshmallow 3.jpeg" style="width:100%">
+                  <span class="w3-tag w3-display-topleft">Nou</span>
+                  <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button w3-black">Cumpara acum <i class="fa fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+                <p>Model Cherry<br><b>500 lei</b></p>
+              </div>
+              <div class="w3-container">
+                <img src="poze gentute/marshmallow4.jpg" style="width:100%">
+                <p>Model Turquoise<br><b>500 lei</b></p>
+              </div>
+            </div>
+        
+            <div class="w3-col l3 s6">
+              <div class="w3-container">
+                <img src="poze gentute/marshmallow5.jpeg" style="width:100%">
+                <p>Model Yellow<br><b>500 lei</b></p>
+              </div>
+              <div class="w3-container">
+                <div class="w3-display-container">
+                  <img src="poze gentute/marshmallow6.jpg" style="width:100%">
+                  <span class="w3-tag w3-display-topleft">Reducere</span>
+                  <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button w3-black">Cumpara acum <i class="fa fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+                <p>Model Lime<br><b class="w3-text-red">400 lei</b></p>
+              </div>
+            </div>
+        
+            <div class="w3-col l3 s6">
+              <div class="w3-container">
+                <img src="poze gentute/marshmallow7.jpg" style="width:100%">
+                <p>Model Gray<br><b>500 lei</b></p>
+              </div>
+              <div class="w3-container">
+                <img src="poze gentute/marshmallow8.jpg" style="width:100%">
+                <p>Model Blue<br><b>500 lei</b></p>
+              </div>
+            </div>
+          </div>
+          
+        <hr class="featurette-divider">
+      </div><!-- /.container -->
+
+      <h2>Cum să păstrezi?</h2> 
+            <p class="text-center">Geanta MacMade este ușor de întreținut și de utilizat. Se spala cu detergent lichid in apa rece, nu se stoarce, nu se usuca in apropierea dispozitivelor de incalzire. Punga Marshmallow trebuie depozitată în poziție orizontală, nu trebuie să atârne de mânere și curele. Fiecare dintre produsele mele le trimit cumpărătorului complet cu o husă de praf și instrucțiuni detaliate pentru îngrijire.
+            </p>
+     <!-- FOOTER -->
+    
+        <footer>
+          <div class="wrapper">
+            <a href="https://www.facebook.com/m.a.c.made01" class="icon facebook">
+              <div class="tooltip">Facebook</div>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </a>
+            <a href="https://instagram.com/m.a.c.made?igshid=YmMyMTA2M2Y=" class="icon instagram">
+              <div class="tooltip">Instagram</div>
+              <span><i class="fab fa-instagram"></i></span>
+            </a>
+          </div>
+          <img src="Poze/poza antet jos.png" alt=""
+          width="1550"
+          >
+      </footer>
+          
+      <script src="bootstrap-5.0.0-beta1-dist\js\bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
+
+    
+       
+          
+     
