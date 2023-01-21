@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rucsacuri</title>
+
+    <link href="bootstrap-5.0.0-beta1-dist\css\bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+    <link href="tools/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="Rucsacuri.css" rel="stylesheet">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+   </head>
+      
+   <body>
+        
+    <header>
+
+      <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+          <div class="w3-col s3">
+            <a href="Acasă.html" class="w3-button w3-block w3-black">Acasă</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="Gentuțe.html" class="w3-button w3-block w3-black">Gentuțe</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="Rucsacuri.html" class="w3-button w3-block w3-black">Rucsacuri</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="Despre noi.html" class="w3-button w3-block w3-black">Despre noi</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="Înregistrare.html" class="w3-button w3-block w3-black">Înregistrare</a>
+          </div>
+        </div>
+      </div>
+     
+    
+   
+
+       <!--  Rucsacuri -->
+    
+  <div class="w3-row ">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="Poze/rucsac lime.jpg" style="width:100%">
+        <p>Rucsac Lime<br><b>500 lei</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="Poze/rucsac mov2.jpg" style="width:100%">
+        <p>Rucsac Purple<br><b>500 lei</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="Poze/rucsac maxorange.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Nou</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Cumpara acum <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Rucsac Orange Max<br><b>500 lei</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="Poze/rucsac orange.jpg" style="width:100%">
+        <p>Rucsac Orange<br><b>500 lei</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="Poze/ruccsac blue.jpg" style="width:100%">
+        <p>Rucsac Blue<br><b>500 lei</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="Poze/rucsac white.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Reducere</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Cumpara acum <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Rucsac White<br><b class="w3-text-red">400 lei</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="Poze/rucsac caramel.jpg" style="width:100%">
+        <p>Rucsac Caramel<br><b>500 lei</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="Poze/rucsac gri.jpg" style="width:100%">
+        <p>Rucsac Gray<br><b>500 lei</b></p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+  <div class="w3-descriere">
+    <h3><b>Descriere</b></h3>
+   
+    <p class="text-center">Rucsacul este tricotat dintr-un cordon de poliester de culoare pe care o doriti. Are rezistență mare la uzură.
+      Clapeta, fundul, bretelele si cravata sunt din piele naturala in culoarea selectata de dumneavoastra.
+      Dimensiuni în înălțime - 28 cm până la mâner, de-a lungul fundului - 24 * 14
+      Bretelele sunt reglabile.
+      Garnituri metalice de culoare - alamă.
+      Realizat manual.
+      Căptușeala este potrivită cu schema de culori a rucsacului. Buzunar interior.
+      <h6><i>Instrucțiuni de îngrijire</i></h6>
+      Nu necesită îngrijire specială</p>
+  </div>
+  
+  <hr class="featurette-divider">
+    <!-- Footer -->
+   
+      <footer>
+        <div class="wrapper">
+          <a href="https://www.facebook.com/m.a.c.made01" class="icon facebook">
+            <div class="tooltip">Facebook</div>
+            <span><i class="fab fa-facebook-f"></i></span>
+          </a>
+          <a href="https://instagram.com/m.a.c.made?igshid=YmMyMTA2M2Y=" class="icon instagram">
+            <div class="tooltip">Instagram</div>
+            <span><i class="fab fa-instagram"></i></span>
+          </a>
+        </div>
+        <img src="Poze/poza antet jos.png" alt=""
+        width="1550"
+        >
+    </footer>
+   
+            <!-- ----------------------------------------------------------------------------------------------- -->
+    
+      <script src="bootstrap-5.0.0-beta1-dist\js\bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+     
+  </body>
+</html>
+
